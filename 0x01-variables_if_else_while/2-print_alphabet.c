@@ -8,8 +8,8 @@
 int main(void)
 {
 	char a;
-	a = 97;
 
+	a = 97;
 	while (a < 97 + 26)
 	{
 		putchar(a);
