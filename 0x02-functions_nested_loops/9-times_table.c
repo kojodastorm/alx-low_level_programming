@@ -20,7 +20,6 @@ void times_table(void)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar(' ');
 			}
 			c = a * b;
 			b2 = c % 10 + 48;
@@ -28,6 +27,10 @@ void times_table(void)
 			if (b1 > 48)
 			{
 				_putchar(b1);
+			}
+			else
+			{
+				_putchar(' ');
 			}
 			_putchar(b2);
 		}
