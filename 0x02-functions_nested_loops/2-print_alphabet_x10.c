@@ -1,11 +1,23 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
+ *print_alphabet_x10 - loops through all the alphabets
+ *10 times
  *
- *Return: Always 0 (Success)
+ *Return: void (Success)
  */
-int main(void)
+void print_alphabet_x10(void)
 {
-	return (0);
+	int i = 97;
+	int a = 0;
+
+	while (a < 10)
+	{
+		while (i < 97 + 26)
+		{
+			_putchar(i);
+			i++;
+		}
+		_putchar(10);
+	a++;
+	}
 }
