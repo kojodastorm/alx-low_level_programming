@@ -39,12 +39,10 @@ void print_times_table(int n)
 				{
 					if (b1 > 48)
 					{
-						_putchar(' ');
 						_putchar(b1);
 					}
 					else
 					{
-						_putchar(' ');
 						_putchar(' ');
 					}
 					if (b2 > 48)
@@ -60,6 +58,5 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
