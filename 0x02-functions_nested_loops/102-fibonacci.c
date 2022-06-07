@@ -17,7 +17,7 @@ int main(void)
 	num = 3;
 	for (i = 1; i <= 50; i++)
 	{
-		print (", %d", num);
+		printf(", %d", num);
 		newtmp = num;
 		num += oldtmp;
 		oldtmp = newtmp;
