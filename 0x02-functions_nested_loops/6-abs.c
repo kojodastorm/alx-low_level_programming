@@ -1,11 +1,17 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
- *
- *Return: Always 0 (Success)
+ *_abs - prints the absolute of the number
+ *@n: contains the integer decimal
+ *Return: int (Success)
  */
-int main(void)
+int _abs(int n)
 {
-	return (0);
+	if (n < 0)
+	{
+		return (n * -1);
+	}
+	else
+	{
+		return (n);
+	}
 }
