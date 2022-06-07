@@ -14,11 +14,11 @@ void print_times_table(int n)
 	int b2;
 	int b3;
 
-	if (n <= 15 || n >= 0)
+	if (n <= 15 && n >= 0)
 	{
-		for (a = 0; a < n; a++)
+		for (a = 0; a <= n; a++)
 		{
-			for (d = 0; d < n; d++)
+			for (d = 0; d <= n; d++)
 			{
 				if (d > 0)
 				{
