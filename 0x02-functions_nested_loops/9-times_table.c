@@ -24,8 +24,11 @@ void times_table(void)
 			}
 			c = a * b;
 			b2 = c % 10 + 48;
-			b1 = c /10 + 48;
-			_putchar(b1);
+			b1 = c / 10 + 48;
+			if (b1 > 0)
+			{
+				_putchar(b1);
+			}
 			_putchar(b2);
 		}
 		_putchar('\n');
