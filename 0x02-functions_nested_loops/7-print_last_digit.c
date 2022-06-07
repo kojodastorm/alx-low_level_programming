@@ -1,11 +1,16 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
- *
- *Return: Always 0 (Success)
+ *print_last_digit - prints the last digit of the number
+ *@n: contains the integer decimal
+ *Return: int (Success)
  */
-int main(void)
+int print_last_digit(int n)
 {
-	return (0);
+	if (n < 0)
+	{
+		n *= -1;
+	}
+	n = n % 10;
+	_putchar(n + 48);
+	return (n);
 }
