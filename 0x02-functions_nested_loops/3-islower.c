@@ -1,11 +1,17 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
- *
- *Return: Always 0 (Success)
+ *_islower - determins if the character is lower
+ *@c: contains the integer decimal
+ *Return: int (Success)
  */
-int main(void)
+int _islower(int c)
 {
-	return (0);
+	if (c > 65 + 26)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
