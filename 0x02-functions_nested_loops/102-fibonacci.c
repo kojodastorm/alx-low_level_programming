@@ -8,14 +8,14 @@
 
 int main(void)
 {
-	int num = 1;
-	int oldtmp = 2;
-	int newtmp = 2;
+	long long int num = 1;
+	long long int oldtmp = 2;
+	long long int newtmp = 2;
 	int i;
 
 	printf("1, 2");
 	num = 3;
-	for (i = 1; i <= 50; i++)
+	for (i = 1; i <= 47; i++)
 	{
 		printf(", %d", num);
 		newtmp = num;
