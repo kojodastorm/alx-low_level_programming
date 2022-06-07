@@ -9,14 +9,3 @@
  */
 int _putchar(char c);
 void print_alphabet(void);
-
-void print_alphabet(void)
-{
-	int i = 97;
-	while (i < 97 + 26)
-	{
-		_putchar(i);
-		i++;
-	}
-	_putchar(10);
-}
