@@ -9,7 +9,7 @@ int print_last_digit(int n)
 {
 	if (n < -10000)
 	{
-		n-= 1000;
+		n -= 1000;
 	}
 	if (n < 0)
 	{
