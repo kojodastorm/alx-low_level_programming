@@ -17,10 +17,10 @@ void jack_bauer(void)
 	{
 		for (b = 0; b < 60; b++)
 		{
-			h1 = a % 10 + 48;
-			h2 = a / 10 + 48;
-			m1 = b % 10 + 48;
-			m2 = b / 10 + 48;
+			h2 = a % 10 + 48;
+			h1 = a / 10 + 48;
+			m2 = b % 10 + 48;
+			m1 = b / 10 + 48;
 			_putchar(h1);
 			_putchar(h2);
 			_putchar(':');
