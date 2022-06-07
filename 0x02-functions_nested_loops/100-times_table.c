@@ -38,18 +38,7 @@ void print_times_table(int n)
 				else
 				{
 					(b1 > 48) ? _putchar(b1) : _putchar(' ');
-					if (b2 > 48)
-					{
-						_putchar(b2);
-					}
-					else if (b1 > 48)
-					{
-						_putchar(b2);
-					}
-					else
-					{
-						_putchar(' ');
-					}
+					(b2 > 48) ? _putchar(b2) : ((b1 > 48) ? _putchar(b2) : _putchar(' '));
 					_putchar(b3);
 				}
 			}
