@@ -28,8 +28,8 @@ void print_times_table(int n)
 				c = a * d;
 				b3 = c % 10 + 48;
 				b2 = c / 10;
-				b2 = b2 % 10 + 48;
 				b1 = b2 / 10 + 48;
+				b2 = b2 % 10 + 48;
 				/*Number is b1 b2 b3*/
 				if (d == 0)
 				{
