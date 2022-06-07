@@ -1,11 +1,27 @@
+#include "main.h"
 #include <stdio.h>
-
 /**
- *main - Entry point
+ *print_to_98 - prints the numbers before and after 98
+ *@n: the starting number
  *
- *Return: Always 0 (Success)
+ *Return: void (Success)
  */
-int main(void)
+void print_to_98(int n)
 {
-	return (0);
+	int a = 98;
+
+	while (n != a)
+	{
+		printf("%d, ", n);
+		if (n > a)
+		{
+			n--;
+		}
+		else if (n < a)
+		{
+			n++;
+		}
+	}
+	printf("%d\n", 98);
+
 }
