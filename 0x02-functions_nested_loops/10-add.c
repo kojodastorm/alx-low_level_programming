@@ -1,11 +1,11 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
- *
- *Return: Always 0 (Success)
+ *add - adds two integers
+ *@a: contains the integer decimal
+ *@b: contains another integer decimal
+ *Return: int (Success)
  */
-int main(void)
+int add(int a, int b)
 {
-	return (0);
+	return (a + b);
 }
