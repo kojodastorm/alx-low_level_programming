@@ -15,12 +15,13 @@ int main(void)
 
 	printf("1, 2");
 	num = 3;
-	for (i = 1; i <= 47; i++)
+	for (i = 1; i <= 48; i++)
 	{
 		printf(", %ld", num);
 		newtmp = num;
 		num += oldtmp;
 		oldtmp = newtmp;
 	}
+	printf("\n");
 	return (0);
 }
