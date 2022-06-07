@@ -45,7 +45,7 @@ void print_times_table(int n)
 					{
 						_putchar(' ');
 					}
-					if (b2 > 48)
+					if (b2 > 48 && b1 > 48)
 					{
 						_putchar(b2);
 					}
