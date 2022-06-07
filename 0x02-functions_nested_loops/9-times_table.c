@@ -15,10 +15,12 @@ void times_table(void)
 		{
 			if (b > 0)
 			{
-				_putchar(',  ');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			_putchar(a * b + 48);
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
