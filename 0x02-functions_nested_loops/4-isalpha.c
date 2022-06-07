@@ -1,11 +1,17 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
- *
- *Return: Always 0 (Success)
+ *_isalpha - determins if the character is a letter
+ *@c: contains the integer decimal
+ *Return: int (Success)
  */
-int main(void)
+int _isalpha(int c)
 {
-	return (0);
+	if ((c > 96 && c < 97 + 26) || (c > 64 && c < 65 + 26))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
