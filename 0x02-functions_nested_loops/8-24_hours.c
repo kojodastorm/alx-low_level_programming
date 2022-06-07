@@ -1,11 +1,32 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- *main - Entry point
+ *jack_bauer - prints the last digit of the number
  *
- *Return: Always 0 (Success)
+ *Return: int (Success)
  */
-int main(void)
+void jack_bauer(void)
 {
-	return (0);
+	int a = 0;
+	int b = 0;
+	int h1;
+	int h2;
+	int m1;
+	int m2;
+
+	for (a = 0; a < 24; a++)
+	{
+		for (b = 0; b < 60; b++)
+		{
+			h1 = a % 10 + 48;
+			h2 = a / 10 + 48;
+			m1 = b % 10 + 48;
+			m2 = b / 10 + 48;
+			_putchar(h1);
+			_putchar(h2);
+			_putchar(':');
+			_pitchar(m1);
+			_putchar(m2);
+			_putchar(10);
+		}
+	}
 }
