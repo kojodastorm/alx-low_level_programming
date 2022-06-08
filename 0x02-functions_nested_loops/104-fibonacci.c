@@ -8,16 +8,16 @@
 
 int main(void)
 {
-	double num = 1;
-	double oldtmp = 2;
-	double newtmp = 2;
+	long double num = 1;
+	long double oldtmp = 2;
+	long double newtmp = 2;
 	int i;
 
 	printf("1, 2");
 	num = 3;
 	for (i = 1; i <= 96; i++)
 	{
-		printf(", %0.f", num);
+		printf(", %.0Lf", num);
 		newtmp = num;
 		num += oldtmp;
 		oldtmp = newtmp;
