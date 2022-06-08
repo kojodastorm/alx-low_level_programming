@@ -8,9 +8,6 @@
 
 int main(void)
 {
-	unsigned long num = 1;
-	unsigned long oldtmp = 2;
-	unsigned long newtmp = 2;
 	int i;
 	unsigned long p1num = 0;
 	unsigned long p2num = 3;
