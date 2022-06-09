@@ -23,12 +23,13 @@ int main(void)
 		if (p1num > 0)
 		{
 			printf(", %lu", p1num);
+			printf("%09lu", p2num);
 		}
 		else
 		{
 			printf(", ");
+			printf("%lu", p2num);
 		}
-		printf("%lu", p2num);
 		p2nt = p2num;
 		p1nt = p1num;
 		p2num += p2ot;
