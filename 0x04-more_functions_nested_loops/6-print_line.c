@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * print_line - print from 0 - 9
+ * print_line - print a line with length n of _
+ *
+ * @n: length integer
  *
  * Return: void
  */
