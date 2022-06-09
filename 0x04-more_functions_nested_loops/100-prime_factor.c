@@ -3,12 +3,9 @@
 /**
  * main - find largest prime numbers
  *
- * Return: int
- *
- * prime - find if the number is prime
  * @a: long int test number
  *
- * Return: int 1 for prime 0 for not prime
+ * Return: int
  */
 
 int prime(unsigned long int a);
@@ -39,19 +36,19 @@ int main(void)
 				i++;
 			}
 			if (prime(a))
-                        {
-                                if (a >= num)
-                                {
-                                        num = a;
-                                        i = 0;
-                                        break;
-                                }
-                                else
-                                {
-                                        i = 0;
-                                        break;
-                                }
-                        }
+			{
+				if (a >= num)
+				{
+					num = a;
+					i = 0;
+					break;
+				}
+				else
+				{
+					i = 0;
+					break;
+				}
+			}
 		}
 		else
 		{
@@ -62,23 +59,30 @@ int main(void)
 	return (0);
 }
 
+/**
+ * prime - find if the number is prime
+ *
+ * @a: long integer
+ *
+ * Return: 1 for prime 0 for not
+ */
+
 int prime(unsigned long int a)
 {
-        if (a > 1 && (a == 2 || a == 3 || a == 5))
-        {
-                return (1);
-        }
-        else if (a > 9)
-        {
-                if (a % 10 == 1 || a % 10 == 3 || a % 10 == 7 || a % 10 == 9)
-                {
-                        return (1);
-                }
-        }
-        else
-        {
-                return (0);
-        }
+	if (a > 1 && (a == 2 || a == 3 || a == 5))
+	{
+		return (1);
+	}
+	else if (a > 9)
+	{
+		if (a % 10 == 1 || a % 10 == 3 || a % 10 == 7 || a % 10 == 9)
+		{
+			return (1);
+		}
+	}
+	else
+	{
+		return (0);
+	}
 	return (0);
 }
-
