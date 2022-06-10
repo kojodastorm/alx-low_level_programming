@@ -34,7 +34,7 @@ void print_number(int n)
 	{
 		i *= 10;
 	}
-	while (i > 1)
+	while (i > 0)
 	{
 		if (state == 45)
 		{
