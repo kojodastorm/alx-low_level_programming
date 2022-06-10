@@ -85,5 +85,5 @@ int prime(unsigned long int a)
 	{
 		return (1);
 	}
-	return(0);
+	return (0);
 }
