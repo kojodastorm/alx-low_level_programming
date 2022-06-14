@@ -21,7 +21,7 @@ void rev_string(char *s)
 	i--;
 	k = i;
 
-	while (i >= k / 2)
+	while (i > k / 2)
 	{
 		s = s - 1;
 		tmp = *(s - (i - j));
