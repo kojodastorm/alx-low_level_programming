@@ -2,8 +2,8 @@
 
 /**
  * string_toupper - changes to uppercase
- * @*: contains the destination pointer
- * 
+ * @s: contains the destination pointer
+ *
  * Return: char
  */
 
@@ -13,7 +13,7 @@ char *string_toupper(char *s)
 
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		if(*(s + i) >= 'a' && *(s + i) <= 'z')
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
 		{
 			*(s + i) -= -('A' - 'a');
 		}
