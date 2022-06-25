@@ -18,10 +18,15 @@ char *_strchr(char *s, char c)
 	while (*(s + i) != c && *(s + i) != '\0')
 	{
 		i++;
-		continue;
 	}
 
-	loc = s + i;
-
-	return (loc);
+	if (c != '\0')
+	{
+		return (NULL);
+	}
+	else
+	{
+		loc = s + i;
+		return (loc);
+	}
 }
