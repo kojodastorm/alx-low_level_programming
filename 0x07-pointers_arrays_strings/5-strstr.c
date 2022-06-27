@@ -18,21 +18,24 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (*(needle + i) == *(haystack + j))
 			{
-				for (i = 1; *(needle + i) != '\0'; i++)
+				for (i = 0; *(needle + i) != '\0'; i++)
 				{
 					if (*(needle + i) == *(haystack + j + i))
 					{
+						 if (*(needle + i + 1) == '\0')
+						 {
+							 return (haystack + j);
+						 }
 						continue;
 					}
 					else
 					{
-						return (NULL);
+						i = 0;
+						break;
 					}
 				}
-
-				return (haystack + j);
 			}
 		}
 	}
-	return (NULL);
+	return ("NULL");
 }
