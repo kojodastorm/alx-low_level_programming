@@ -38,5 +38,9 @@ char *_strstr(char *haystack, char *needle)
 			}
 		}
 	}
+	else
+	{
+		return (h);
+	}
 	return (0);
 }
