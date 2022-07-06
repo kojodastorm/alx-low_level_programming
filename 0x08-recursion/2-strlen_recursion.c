@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - outputs string length
+ * _strlen_recursion - outputs string length
  *
  * @s: string to count
  *
@@ -11,6 +11,7 @@
 int _strlen_recursion(char *s)
 {
 	int n;
+
 	if (*s != '\0')
 	{
 		s++;
