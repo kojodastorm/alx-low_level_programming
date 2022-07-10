@@ -51,6 +51,14 @@ int _sqrt_recursion(int n)
 	return (recursion(1, n));
 }
 
+/**
+ * recursion - outputs square root
+ *
+ * @n: integer
+ * @a: starting point
+ *
+ * Return: int
+ */
 
 int recursion(int a, int n)
 {
