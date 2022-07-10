@@ -40,23 +40,27 @@ int _pow_recursion(int x, int y)
 
 int _sqrt_recursion(int n)
 {
-	int sq = 2;
-
-	printf("%d ", sq);
-
-	printf("%d ", _pow_recursion(sq, 2));
-	if (n == _pow_recursion(sq, 2))
-	{
-		return (sq);
-	}
-	if (sq > n / 2 || _pow_recursion(sq, 2) > n)
+	if (n <= 0)
 	{
 		return (-1);
 	}
-	if (_pow_recursion(sq, 2) < n)
+	if (n == 1)
 	{
-		sq++;
-		return (_sqrt_recursion(sq));
+		return (1);
 	}
-	return (0);
+	return (recursion(1, n));
+}
+
+
+int recursion(int a, int n)
+{
+	if (n == _pow_recursion(a, 2))
+	{
+		return (a);
+	}
+	if (a > n / 2 || _pow_recursion(a, 2) > n)
+	{
+		return (-1);
+	}
+	return (recursion(++a, n));
 }
