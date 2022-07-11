@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * is_palindrome - find if the string is palindrome
+ * _count - find the string length
  *
  * @s: string pointer
  *
- * Return: 1 for palindrome 0 for not
+ * Return: lenth
  */
 
 int _count(char *s)
@@ -21,9 +21,20 @@ int _count(char *s)
 	return (0);
 }
 
+/**
+ * _strcmp - find if the string is palindrome
+ *
+ * @s: string pointer
+ * @n: integer count
+ * @half: half of the count
+ *
+ * Return: 1 for palindrome 0 for not
+ */
+
 int _strcmp(char *s, int n, int half)
 {
 	int a = 1;
+
 	if (*s == *(s + n - 1) && half > 0)
 	{
 		n--;
@@ -39,12 +50,18 @@ int _strcmp(char *s, int n, int half)
 	}
 	return (1);
 }
-				
 
+/**
+ * is_palindrome - find if the string is palindrome
+ *
+ * @s: string pointer
+ *
+ * Return: 1 for palindrome 0 for not
+ */
 int is_palindrome(char *s)
 {
 	int n;
-	
+
 	n = _count(s);
 
 	return (_strcmp(s, n, n / 2));
