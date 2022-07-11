@@ -12,5 +12,8 @@ int is_prime_number(int n);
 int _putchar(char c);
 int recursion(int a, int n);
 int prime(int i, int n);
+int is_palindrome(char *s);
+int _strcmp(char *s, int n, int half);
+int _count(char *s);
 
 #endif
