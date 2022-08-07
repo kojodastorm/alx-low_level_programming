@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
+#include "main.h"
 
 /**
  * main - prints the name of the program
@@ -9,16 +10,12 @@
  *
  * Return: void
  */
-int _putchar(char c);
-int ttn(char *a);
-void pError();
-
 
 int main(int argc, char *argv[])
 {
 	if (argc && argv[1] && argv[2])
 	{
-		printf("%d\n",ttn(argv[1]) * ttn(argv[2]));
+		printf("%d\n", ttn(argv[1]) * ttn(argv[2]));
 	}
 	else
 	{
@@ -27,11 +24,25 @@ int main(int argc, char *argv[])
 	return (0);
 }
 
+/**
+ * _putchar - prints the name of the program
+ *
+ * @c: argument count
+ *
+ * Return: int
+ */
 int _putchar(char c)
 {
-        return (write(1, &c, 1));
+	return (write(1, &c, 1));
 }
 
+/**
+ * ttn - prints the name of the program
+ *
+ * @a: argument count
+ *
+ * Return: int
+ */
 int ttn(char *a)
 {
 	int b = 0;
@@ -58,7 +69,12 @@ int ttn(char *a)
 	return (b * sign);
 }
 
-void pError()
+/**
+ * pError - prints the name of the program
+ *
+ * Return: void
+ */
+void pError(void)
 {
 	_putchar('E');
 	_putchar('r');
